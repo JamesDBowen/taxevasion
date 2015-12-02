@@ -1236,7 +1236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!1 &544144249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,7 +1661,6 @@ GameObject:
   - 114: {fileID: 697028761}
   - 114: {fileID: 697028777}
   - 114: {fileID: 697028778}
-  - 114: {fileID: 697028731}
   - 114: {fileID: 697028780}
   - 114: {fileID: 697028779}
   - 114: {fileID: 697028783}
@@ -1686,18 +1685,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollPos: {x: 138.494858, y: -143.711273}
+  scrollPos: {x: 60.1443558, y: -52.9896317}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 431
-  zoom: .970000029
+  zoom: .940000057
   scrollViewRect:
     serializedVersion: 2
     x: -488.494873
     y: -399
     width: 1573.60815
     height: 1102.81433
-  selectedBlock: {fileID: 697028783}
+  selectedBlock: {fileID: 697028778}
   selectedCommands: []
   variables:
   - {fileID: 697028728}
@@ -1784,18 +1783,6 @@ MonoBehaviour:
   - {fileID: 697028743}
   - {fileID: 697028738}
   - {fileID: 697028740}
---- !u!114 &697028731
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 697028726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 697028778}
 --- !u!4 &697028732
 Transform:
   m_ObjectHideFlags: 0
@@ -2927,7 +2914,7 @@ MonoBehaviour:
   itemId: 47
   blockName: TestBLOCK
   description: 
-  eventHandler: {fileID: 697028731}
+  eventHandler: {fileID: 0}
   commandList:
   - {fileID: 697028780}
   - {fileID: 697028779}
@@ -2976,7 +2963,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &697028781
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697028726}
@@ -2989,7 +2976,7 @@ MonoBehaviour:
   message: TestBLOCK2
 --- !u!114 &697028782
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697028726}
@@ -3015,7 +3002,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &697028783
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 697028726}
@@ -3623,6 +3610,14 @@ GameObject:
   - 114: {fileID: 801580786}
   - 114: {fileID: 801580785}
   - 114: {fileID: 801580784}
+  - 114: {fileID: 801580654}
+  - 114: {fileID: 801580796}
+  - 114: {fileID: 801580795}
+  - 114: {fileID: 801580794}
+  - 114: {fileID: 801580793}
+  - 114: {fileID: 801580792}
+  - 114: {fileID: 801580791}
+  - 114: {fileID: 801580797}
   m_Layer: 0
   m_Name: Flowchart_Boardroom_01
   m_TagString: Untagged
@@ -3642,10 +3637,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollPos: {x: 285.464874, y: 181.652084}
+  scrollPos: {x: 260.464813, y: 12.9021511}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 200
+  blockViewHeight: 246
   zoom: .640000343
   scrollViewRect:
     serializedVersion: 2
@@ -3653,7 +3648,7 @@ MonoBehaviour:
     y: -573.839539
     width: 2959.59619
     height: 1434.11389
-  selectedBlock: {fileID: 801580644}
+  selectedBlock: {fileID: 801580719}
   selectedCommands: []
   variables: []
   description: 'This is the scene containing the initial conversation with Steven
@@ -3837,8 +3832,15 @@ MonoBehaviour:
   itemId: 0
   blockName: Begin Boardroom 01
   description: 
-  eventHandler: {fileID: 0}
+  eventHandler: {fileID: 801580654}
   commandList:
+  - {fileID: 801580796}
+  - {fileID: 801580795}
+  - {fileID: 801580794}
+  - {fileID: 801580797}
+  - {fileID: 801580793}
+  - {fileID: 801580792}
+  - {fileID: 801580791}
   - {fileID: 801580647}
   - {fileID: 801580653}
   - {fileID: 801580651}
@@ -3971,7 +3973,7 @@ MonoBehaviour:
   errorMessage: 
   indentLevel: 0
   storyText: 'Department heads and assistants sit around the table that takes up too
-    much of the room. Gwen and her immediate superior, MR. BLANK, are uncomfortably
+    much of the room. Gwen and her immediate superior, MR BLANK, are uncomfortably
     close to the head of the table, where Mr. Boaring will soon be perched. '
   description: 
   character: {fileID: 0}
@@ -4038,6 +4040,18 @@ MonoBehaviour:
   fadeOut: 0
   waitForClick: 1
   setSayDialog: {fileID: 0}
+--- !u!114 &801580654
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2f6487d21a03404cb21b245f0242e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 801580644}
 --- !u!114 &801580655
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4193,7 +4207,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'Everyone was waiting. Anticipating something bad. We knew that our third
     quarter had been a disaster. Obviously, this was going to be the last board meeting
-    for some of us. '
+    for some of us, and Mr. Boaring wasn''t an easy man to please in good times. '
   description: 
   character: {fileID: 257148614}
   portrait: {fileID: 0}
@@ -7320,6 +7334,179 @@ MonoBehaviour:
   fadeOut: 0
   waitForClick: 1
   setSayDialog: {fileID: 939579015}
+--- !u!114 &801580791
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 170
+  errorMessage: 
+  indentLevel: 0
+  storyText: This is Tax Evasion in Space.
+  description: 
+  character: {fileID: 257148614}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeIn: 0
+  fadeOut: 0
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &801580792
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 169
+  errorMessage: 
+  indentLevel: 0
+  storyText: This is my story.
+  description: 
+  character: {fileID: 257148614}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeIn: 0
+  fadeOut: 0
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &801580793
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 168
+  errorMessage: 
+  indentLevel: 0
+  storyText: 'This is the story of a madman, of corruption and bribery. '
+  description: 
+  character: {fileID: 257148614}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeIn: 0
+  fadeOut: 0
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &801580794
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 167
+  errorMessage: 
+  indentLevel: 0
+  storyText: 'I am -- was -- the assistant lead of operations for Boaring Biotech.
+    Back when this started, that wouldn''t have sounded like much. Now.. well. Things
+    change, don''t they? '
+  description: 
+  character: {fileID: 257148614}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeIn: 0
+  fadeOut: 0
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &801580795
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 166
+  errorMessage: 
+  indentLevel: 0
+  storyText: 'My name is Gwen. Gwen Darjeeling. '
+  description: 
+  character: {fileID: 257148614}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeIn: 0
+  fadeOut: 0
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
+--- !u!114 &801580796
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65d551a201c94bc79950076ff3eaf2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 165
+  errorMessage: 
+  indentLevel: 0
+  sayDialog: {fileID: 939579015}
+--- !u!114 &801580797
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 801580635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 171
+  errorMessage: 
+  indentLevel: 0
+  storyText: 'How did we end here? What roads led to this courtroom? '
+  description: 
+  character: {fileID: 257148614}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeIn: 0
+  fadeOut: 0
+  waitForClick: 1
+  setSayDialog: {fileID: 0}
 --- !u!1 &834692285
 GameObject:
   m_ObjectHideFlags: 0
@@ -10440,7 +10627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 697028727}
+  selectedFlowchart: {fileID: 801580636}
 --- !u!4 &1618288058
 Transform:
   m_ObjectHideFlags: 1
