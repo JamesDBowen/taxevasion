@@ -13,8 +13,6 @@ public class GhostTransferScript : MonoBehaviour {
 
 	void Start(){
 		StartAnimation (otherChar, gwen);
-		Debug.Log (otherChar.transform.localPosition + "   " + gwen.transform.localPosition);
-		Debug.Log (ghost.transform.localPosition);
 	}
 
 	void Update(){
@@ -24,12 +22,9 @@ public class GhostTransferScript : MonoBehaviour {
 	}
 
 	public void StartAnimation(GameObject startPoint, GameObject endPoint){
-		Debug.Log ("StartAnimation Called.");
-		ghost.transform.position = startPoint.transform.position;
+		ghost.transform.localPosition = startPoint.transform.localPosition;
 		targetLocation = endPoint; //set destination
 		isMoving = true;
-		ghost.transform.LookAt (targetLocation.transform.position); //face the target destination
-
 	}
 
 	public void TransferAnimation(GameObject ghostTarget){
@@ -40,8 +35,8 @@ public class GhostTransferScript : MonoBehaviour {
 				Debug.Log ("isMoving set false.");
 			} 
 			else {       //if we don't need to stop, keep going.
-				//ghost.transform.LookAt (ghostTarget.transform.position); //face the target destination
-				ghost.transform.Translate (ghost.transform.forward * moveSpeed * Time.deltaTime);	
+				ghost.transform.Translate (new Vector3(1,0,0) * moveSpeed * Time.deltaTime);	
+				GhostFader();
 			}
 		}
 		else {		//we're going towards Gwen
@@ -50,12 +45,15 @@ public class GhostTransferScript : MonoBehaviour {
 				Debug.Log("isMoving set false.");
 			} 
 			else {       //if we don't need to stop, keep going.
-				//ghost.transform.LookAt(ghostTarget.transform.position); //face the target destination
-				ghost.transform.Translate (ghost.transform.forward * moveSpeed * Time.deltaTime);	
+				ghost.transform.Translate (new Vector3(-1,0,0) * moveSpeed * Time.deltaTime);	
+				GhostFader();
 			}
 		}
+	}
 
-
-
+	public void GhostFader() //visual for fading the ghost transfer in and out
+	{
+		float absolute = Mathf.Abs (ghost.transform.localPosition.x);
+		ghost.GetComponent<CanvasGroup> ().alpha = Mathf.Lerp (1,0, (absolute/350));
 	}
 }
