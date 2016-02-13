@@ -593,7 +593,7 @@ GameObject:
   - 114: {fileID: 257148614}
   m_Layer: 0
   m_Name: Gwen
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1240,7 +1240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!1 &544144249
 GameObject:
   m_ObjectHideFlags: 0
@@ -9478,7 +9478,7 @@ GameObject:
   - 114: {fileID: 1343659079}
   m_Layer: 0
   m_Name: Character_Jim
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9525,7 +9525,7 @@ GameObject:
   - 114: {fileID: 1354215241}
   m_Layer: 0
   m_Name: Carissa
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10175,7 +10175,7 @@ GameObject:
   - 114: {fileID: 1463141503}
   m_Layer: 0
   m_Name: Rob
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10634,7 +10634,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -11010,7 +11010,7 @@ GameObject:
   - 114: {fileID: 1757328140}
   m_Layer: 0
   m_Name: Steve
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12143,7 +12143,7 @@ GameObject:
   - 114: {fileID: 1898278523}
   m_Layer: 0
   m_Name: Blank
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
