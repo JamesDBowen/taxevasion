@@ -17,7 +17,7 @@ namespace Fungus
 		public List<Sprite> portraits;
 		public FacingDirection portraitsFace;	
 		public PortraitState state;		
-
+		//public List<InformationBase> infoOwned;
 		[FormerlySerializedAs("notes")]
 		[TextArea(5,10)]
 		public string description;
