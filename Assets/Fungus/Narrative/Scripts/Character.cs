@@ -5,8 +5,9 @@ using System.Collections.Generic;
 using System;
 
 namespace Fungus
-{
 
+{
+	[System.Serializable]
 	[ExecuteInEditMode]
 	public class Character : MonoBehaviour
 	{
@@ -15,6 +16,7 @@ namespace Fungus
 		public AudioClip soundEffect;
 		public Sprite profileSprite;
 		public List<Sprite> portraits;
+		public List<InfoBlock> ownedBlocks = new List<InfoBlock>();
 		public FacingDirection portraitsFace;	
 		public PortraitState state;		
 		//public List<InformationBase> infoOwned;
